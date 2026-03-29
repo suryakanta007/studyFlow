@@ -12,10 +12,14 @@ const SessionList = () => {
     <div className="w-full  min-h-screen bg-[#071824] px-6 py-8">
 
       <div className="max-w-7xl h-screen mx-auto border border-white/10 rounded-2xl p-6 bg-[#0b1e2d]/80 backdrop-blur-md shadow-lg">
-        
+        <div className="flex justify-between">
         <h2 className="text-white text-xl font-semibold mb-6 tracking-wide">
           Your Study Sessions
         </h2>
+
+        <p className="text-white text-xlfont-semibold mb-6 tracking-wide">Total Sessions :{sessions.length}</p>
+
+        </div>
 
         {
           sessions.length === 0 ? <EmptyState/> :
